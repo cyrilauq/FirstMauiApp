@@ -10,7 +10,7 @@
     <TabBar>
         <ShellContent
             Title="Home"
-            ContentTemplate="{DataTemplate views:NotePage}" />
+            ContentTemplate="{DataTemplate views:AllNotesPage}" />
 
         <ShellContent
             Title="About"

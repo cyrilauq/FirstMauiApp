@@ -12,4 +12,5 @@ internal class About
     public string Version => AppInfo.VersionString;
     public string MoreInfoUrl => "https://aka.ms/maui";
     public string Message => "This app is written in XAML and C# with .NET MAUI.";
+    public string Description => "This app is about a notes manager and it has been write to discover some little thing about .Net MAUI";
 }

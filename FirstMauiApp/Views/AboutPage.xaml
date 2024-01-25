@@ -4,6 +4,9 @@
              xmlns:models="clr-namespace:FirstMauiApp.Models"
              x:Class="FirstMauiApp.Views.AboutPage">
     <ContentPage.BindingContext>
+        <!-- 
+            mappe l’espace Notes.Models de noms .NET à l’espace models de noms XML so we can use it here
+        -->
         <models:About />
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
@@ -11,10 +14,12 @@
             <Image Source="dotnet_bot.png"
                    SemanticProperties.Description="The dot net bot waving hello!"
                    HeightRequest="64" />
+            <!-- Binding Title ==> bind the property Title of About's model to the Text property of the Label -->
             <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
             <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
         </HorizontalStackLayout>
 
+        <Label Text="{Binding Description}" />
         <Label Text="{Binding Message}" />
         <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
     </VerticalStackLayout>
