@@ -7,9 +7,14 @@
     Shell.FlyoutBehavior="Disabled"
     Title="FirstMauiApp">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:NotePage}" />
+
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}" />
+    </TabBar>
 
 </Shell>
